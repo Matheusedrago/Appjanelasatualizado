@@ -35,6 +35,16 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),MenuPrincipalActivity.class);
+                startActivity(intent);
+                finish();
+
+
+            }
+        });
 
     }
 }
